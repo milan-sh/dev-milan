@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between md:p-6 p-4 pt-10 h-[10vh] mb-5 items-center">
+    <nav className="flex justify-between md:p-6 p-4 pt-12 h-[10vh] mb-5 items-center">
       <Button
       className="border-none bg-hoverBg font-bold py-1 px-2 text-xl"
       textColor="black"

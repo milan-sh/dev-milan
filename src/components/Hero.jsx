@@ -21,7 +21,7 @@ function Hero() {
         </h1>
       </div>
       <div className="flex justify-between items-start gap-x-14 md:flex-col sm:flex-col lg:flex-col xl:flex-row flex-col">
-        <h1 className="font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-mobileHeading tracking-tighter xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem] flex sm:flex-wrap flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
+        <h1 className="font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-[7.2rem] tracking-tighter xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem] flex sm:flex-wrap flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
           {Array.from("DEVELOPER").map((letter, index) => (
             <span key={index} className="hover:text-secondaryTextColor">
               {letter}
@@ -31,7 +31,12 @@ function Hero() {
         <div className="font-robot text-secondaryTextColor md:p-4 md:w-2/4 sm:w-3/4 ">
           <div>
             <p className="leading-tight">
-              <span className="text-primaryTextColor mr-2">ABOUT</span>I am a passionate Frontend Developer based in New Delhi, India, specializing in crafting dynamic, responsive, and visually stunning websites. With a focus on seamless functionality and interactive user experiences, I aim to deliver impactful digital solutions that stand out.
+              <span className="text-primaryTextColor mr-2">ABOUT</span>I am a
+              passionate Frontend Developer based in New Delhi, India,
+              specializing in crafting dynamic, responsive, and visually
+              stunning websites. With a focus on seamless functionality and
+              interactive user experiences, I aim to deliver impactful digital
+              solutions that stand out.
             </p>
           </div>
           <div className=" xl:flex sm:hidden hidden justify-between items-center mt-5 lg:hidden md:hidden">
