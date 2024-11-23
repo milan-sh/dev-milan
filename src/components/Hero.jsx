@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="bg-primaryBg min-h-[90vh] p-10">
+    <div className="bg-primaryBg min-h-[90vh] p-4 md:p-10">
       <div className="flex justify-between items-center flex-wrap font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-mobileHeading xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem]">
         <h1 className="tracking-tighter">
           {Array.from("FRONT").map((letter, index) => (
@@ -28,14 +28,10 @@ function Hero() {
             </span>
           ))}
         </h1>
-        <div className="font-robot text-secondaryTextColor md:p-4 md:w-2/4">
+        <div className="font-robot text-secondaryTextColor md:p-4 md:w-2/4 sm:w-3/4 ">
           <div>
             <p className="leading-tight">
-              <span className="text-primaryTextColor mr-2">ABOUT</span>Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ab doloribus quod itaque officiis veritatis odio
-              vitae amet aperiam non nemo, in obcaecati quos unde aut, eaque,
-              voluptas id nostrum dolorum nisi velit doloremque facilis
-              deserunt. Nihil ad vel repudiandae iste!
+              <span className="text-primaryTextColor mr-2">ABOUT</span>I am a passionate Frontend Developer based in New Delhi, India, specializing in crafting dynamic, responsive, and visually stunning websites. With a focus on seamless functionality and interactive user experiences, I aim to deliver impactful digital solutions that stand out.
             </p>
           </div>
           <div className=" xl:flex sm:hidden hidden justify-between items-center mt-5 lg:hidden md:hidden">

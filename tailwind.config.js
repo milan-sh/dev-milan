@@ -15,15 +15,15 @@ export default {
         borderColor: "#777777"
       },
       fontFamily:{
-        bebas: "Bebas Neue, serif",
-        robot: "Roboto, serif"
+        bebas: "Bebas Neue, sans-serif",
+        robot: "Roboto, sans-serif"
       },
       fontSize:{
         xlHeading: "292px",
         lgHeading: "233px",
         mdHeading: "175px",
         smHeading: "143px",
-        mobileHeading: "160px"
+        mobileHeading: "140px"
       },
     },
   },
