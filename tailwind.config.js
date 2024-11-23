@@ -9,6 +9,7 @@ export default {
       colors:{
         primaryBg: "#111111",
         secondaryBg: "#777777",
+        hoverBg: "#CB450C",
         primaryTextColor: "#777777",
         secondaryTextColor: "#aaaaaa",
         borderColor: "#777777"
@@ -23,7 +24,7 @@ export default {
         mdHeading: "175px",
         smHeading: "143px",
         mobileHeading: "160px"
-      }
+      },
     },
   },
   plugins: [],
