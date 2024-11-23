@@ -5,7 +5,26 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        primaryBg: "#111111",
+        secondaryBg: "#777777",
+        primaryTextColor: "#777777",
+        secondaryTextColor: "#aaaaaa",
+        borderColor: "#777777"
+      },
+      fontFamily:{
+        bebas: "Bebas Neue, serif",
+        robot: "Roboto, serif"
+      },
+      fontSize:{
+        xlHeading: "292px",
+        lgHeading: "233px",
+        mdHeading: "175px",
+        smHeading: "143px",
+        mobileHeading: "160px"
+      }
+    },
   },
   plugins: [],
 }
