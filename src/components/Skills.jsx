@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 
 function Skills() {
   return (
-    <div className="min-h-screen w-full">
-      <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-mobileHeading">
+    <div className="md:min-h-screen w-full">
+      <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Skills
       </h1>
       <div className="flex text-center justify-evenly p-4 gap-x-8 overflow-x-hidden">
