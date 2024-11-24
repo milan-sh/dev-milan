@@ -25,6 +25,9 @@ export default {
         smHeading: "143px",
         mobileHeading: "140px"
       },
+      boxShadow:{
+        'custom-orange': '0px 12px 32px rgba(203, 69, 0, 0.3)',
+      }
     },
   },
   plugins: [],
