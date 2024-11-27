@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skills from "./components/Skills"
 import Work from './components/Work'
+import Experience from './components/Experience'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <Skills/>
       <Work/>
+      <Experience/>
     </div>
   )
 }

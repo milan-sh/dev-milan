@@ -56,9 +56,9 @@ function Work() {
         skill2="HTML"
         about="A Netflix UI Clone that replicates the popular streaming platform's interface."
         />
-        <div className="relative hidden md:block">
-            <img className="min-h-full blur-sm" src="./projectImages/coming_soon.jpg" alt="" />
-            <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-hoverBg text-lg font-semibold">Coming soon..</p>
+        <div className="relative hidden bg-primaryBg border border-dashed border-borderColor  md:flex flex-col justify-center items-center gap-y-4">
+          <img className="invert h-16 " src="./coming_soon.png" alt="" />
+          <p className="text-hoverBg">More coming soon...</p>
         </div>
       </div>
     </div>
