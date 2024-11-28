@@ -23,8 +23,8 @@ export default {
         lgHeading: "233px",
         mdHeading: "175px",
         smHeading: "143px",
-        mobileHeading: "135px",
-        phoneHeading: "100px"
+        mobileHeading: "140px",
+        phoneHeading: "90px"
       },
       boxShadow:{
         'custom-orange': '0px 12px 32px rgba(203, 69, 0, 0.3)',

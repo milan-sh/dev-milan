@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="bg-primaryBg min-h-[90vh] p-4 md:p-10">
+    <div className="bg-primaryBg  p-4 md:p-10">
       <div className="flex justify-between items-center flex-wrap font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-mobileHeading xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem]">
         <h1 className="tracking-tighter">
           {Array.from("FRONT").map((letter, index) => (

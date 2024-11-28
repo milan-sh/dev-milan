@@ -4,7 +4,7 @@ const experience  = [
     {
         id:1,
         role: "Front-End Developer Intern",
-        duration: "Nov, 2024 - Present",
+        duration: "Nov, 2024 — Present",
         location:"New Delhi, India",
         companyName: "Sudoyantra India",
         webURL: "https://sudoyantra.com",
@@ -15,7 +15,7 @@ const experience  = [
     {
         id:2,
         role: "Student Co-Ordinator",
-        duration: "Mar, 2022 - May, 2024",
+        duration: "Mar, 2022 — May, 2024",
         location:"New Delhi, India",
         companyName: "Robotics Club, DDUC",
         webURL: "https://www.linkedin.com/company/robotics-club-dduc-new",

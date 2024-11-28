@@ -4,13 +4,13 @@ import ProjectCard from "./ProjectCard";
 
 function Work() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="w-full">
       <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Projects
       </h1>
-      <p className="text-center text-secondaryTextColor text-xl mx-auto w-3/4 md:w-2/4 mb-10">
-        A collection of weird websites, niche data projects, and CSS
-        experiments. which are both pretty fun. Check these out.
+      <p className="text-center text-hoverBg md:text-xl mx-auto w-3/4 md:w-2/4 mb-10">
+        A collection of my selected website, niche projects, and CSS
+        experiments. which are both pretty and fun. Check these out.
       </p>
 
       {/* projects grid */}

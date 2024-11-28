@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 function Skills() {
   return (
-    <div className="md:min-h-screen w-full">
+    <div className="w-full">
       <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Skills
       </h1>

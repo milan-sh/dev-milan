@@ -6,7 +6,7 @@ import {
   faLocationDot,
   faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import experience from "./experience";
+import experience from "./experienceList";
 import Button from "./Button";
 
 function Experience() {
@@ -17,14 +17,14 @@ function Experience() {
   };
 
   return (
-    <div className="min-h-screen w-full py-10 mb-5">
+    <div className="w-full py-10 mb-5">
       <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Experience
       </h1>
       {experience?.map((data, index) => (
         <div
           key={data.id}
-          className="md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center gap-y-5 mb-5"
+          className="md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center gap-y-5 mb-5 text-gray-900"
         >
           <button
             className="bg-hoverBg flex md:flex-row flex-col justify-between px-4 py-3 font-semibold
@@ -35,7 +35,7 @@ function Experience() {
           >
             <h2>{data.role}</h2>
             <div className="flex justify-between items-center gap-x-8  md:max-w-fit w-full">
-              <p>{data.duration}</p>
+              <p className="tracking-tighter">{data.duration}</p>
               {activeIndex === index ? (
                 <FontAwesomeIcon icon={faMinus} />
               ) : (
@@ -45,7 +45,7 @@ function Experience() {
           </button>
           {/* show only that where active index is equal to index */}
           {activeIndex === index && (
-            <div className="bg-secondaryBg min-w-full rounded-sm px-4 py-3 flex flex-col gap-y-2 text-black font-semibold md:text-lg mb-5">
+            <div className="bg-secondaryBg min-w-full rounded-sm px-4 py-3 flex flex-col gap-y-2 text-gray-800 font-semibold md:text-lg mb-5">
               <div className="flex md:flex-row flex-col gap-y-2 items-start md:items-center md:justify-start gap-x-8">
                 <div className="flex justify-between items-center gap-x-3">
                   <FontAwesomeIcon icon={faLocationDot} />
