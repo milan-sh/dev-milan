@@ -24,11 +24,11 @@ function Experience() {
       {experience?.map((data, index) => (
         <div
           key={data.id}
-          className="md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center gap-y-5 mb-5 text-gray-900"
+          className="md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center mb-5 text-gray-900"
         >
           <button
             className="bg-hoverBg flex md:flex-row flex-col justify-between px-4 py-3 font-semibold
-              md:text-lg w-full rounded-sm "
+              md:text-lg w-full rounded-t-sm "
             onClick={() => {
               toggleAccordion(index);
             }}
@@ -45,7 +45,7 @@ function Experience() {
           </button>
           {/* show only that where active index is equal to index */}
           {activeIndex === index && (
-            <div className="bg-secondaryBg min-w-full rounded-sm px-4 py-3 flex flex-col gap-y-2 text-gray-800 font-semibold md:text-lg mb-5">
+            <div className="bg-secondaryBg min-w-full rounded-b-sm px-4 py-3 flex flex-col gap-y-2 text-gray-800 font-semibold md:text-lg">
               <div className="flex md:flex-row flex-col gap-y-2 items-start md:items-center md:justify-start gap-x-8">
                 <div className="flex justify-between items-center gap-x-3">
                   <FontAwesomeIcon icon={faLocationDot} />
@@ -61,7 +61,7 @@ function Experience() {
               <div className="flex justify-between gap-x-3">
                 <p className="leading-6 ">{data.desc}</p>
                 <img
-                  className="size-20 md:block hidden"
+                  className="size-20 md:block rounded-sm hidden"
                   src={data.url}
                   alt=""
                 />
@@ -70,7 +70,7 @@ function Experience() {
                 {data.tech.map((skill, index) => (
                   <Button
                     key={index}
-                    className="border-hoverBg cursor-text"
+                    className="border-gray-800 cursor-text"
                     textColor="black"
                   >
                     {skill}

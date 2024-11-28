@@ -6,10 +6,13 @@ import Work from './components/Work';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Menu from './components/Menu';
+
 
 function App() {
   return (
     <div className='min-h-screen bg-primaryBg'>
+      {/* <Menu/> */}
       <Navbar/>
       <Hero/>
       <Skills/>

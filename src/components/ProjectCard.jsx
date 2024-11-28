@@ -18,8 +18,8 @@ function ProjectCard({ url, img, title, skill1, skill2, about }) {
         <div className="flex justify-between items-center">
           <h2 className="text-hoverBg font-semibold text-xl">{title}</h2>
           <div className="flex justify-between items-center gap-x-4">
-            <Button>{skill1}</Button>
-            <Button>{skill2}</Button>
+            <Button className="cursor-default">{skill1}</Button>
+            <Button className="cursor-default">{skill2}</Button>
           </div>
         </div>
         <p className="text-secondaryTextColor mt-2">{about}</p>

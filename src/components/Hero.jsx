@@ -21,7 +21,7 @@ function Hero() {
         </h1>
       </div>
       <div className="flex justify-between items-start gap-x-14 md:flex-col sm:flex-col lg:flex-col xl:flex-row flex-col">
-        <h1 className="font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-[7.2rem] tracking-tighter xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem] flex sm:flex-wrap flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
+        <h1 className="font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-[7rem] tracking-tighter xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem] flex sm:flex-wrap flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap">
           {Array.from("DEVELOPER").map((letter, index) => (
             <span key={index} className="hover:text-secondaryTextColor">
               {letter}
