@@ -1,21 +1,26 @@
-import React from "react";
+import React, {useContext} from "react";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import ToggleContext from "../context/ToggleContext";
 
 function Navbar() {
+  const { isNavOpen, setIsNavOpen } = useContext(ToggleContext);
+  const toggleNav=()=>{
+    setIsNavOpen(!isNavOpen)
+  }
   return (
     <nav className="flex justify-between md:px-6 p-4 pt-12 h-[10vh] mb-5 items-center">
       <Button
       className="border-none bg-hoverBg font-bold py-1 px-2 text-xl"
       textColor="black"
-      >MILAN SINGH</Button>
+      ><a href="/">MILAN SINGH</a></Button>
       <div className="flex items-center justify-between gap-x-5">
         <Button
         className="hover:bg-hoverBg hover:text-black hover:border-hoverBg hidden md:block "
-        >CONTACT</Button>
-        <Button className="border-none">
-          <FontAwesomeIcon size="xl" className="hover:text-[#CB450C]" icon={faBars} />
+        ><a href="https://drive.google.com/file/d/1uy6ddYXaOofIRK7JeJxhnSMFE38nvmxu/view?usp=sharing" target="_blank">Download CV</a></Button>
+        <Button className="border-none" onClick={toggleNav}>
+          {isNavOpen ? <FontAwesomeIcon icon={faXmark} size="2xl" className="hover:text-[#CB450C]" /> : <FontAwesomeIcon size="xl" className="hover:text-[#CB450C]" icon={faBars} />}
         </Button>
       </div>
     </nav>

@@ -7,7 +7,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   const handleSubmit = () => {};
   return (
-    <div className="bg-primaryBg md:pb-20 pb-10">
+    <div id="contact" className="bg-primaryBg md:pb-20 pb-10">
       <h1 className="md:text-mdHeading text-phoneHeading font-bebas text-center text-primaryTextColor">Contact</h1>
       <div className="text-secondaryTextColor m-auto md:w-2/4 w-[90%]">
         <form onSubmit={handleSubmit} className="flex flex-col justify-between gap-y-3">

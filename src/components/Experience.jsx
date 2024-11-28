@@ -17,7 +17,7 @@ function Experience() {
   };
 
   return (
-    <div className="w-full py-10 mb-5">
+    <div id="experience" className="w-full py-10 mb-5">
       <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Experience
       </h1>

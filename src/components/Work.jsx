@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 function Work() {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Projects
       </h1>
