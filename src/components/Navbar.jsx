@@ -20,7 +20,7 @@ function Navbar() {
         className="hover:bg-hoverBg hover:text-black hover:border-hoverBg hidden md:block "
         ><a href="https://drive.google.com/file/d/1uy6ddYXaOofIRK7JeJxhnSMFE38nvmxu/view?usp=sharing" target="_blank">Download CV</a></Button>
         <Button className="border-none" onClick={toggleNav}>
-          {isNavOpen ? <FontAwesomeIcon icon={faXmark} size="2xl" className="hover:text-[#CB450C]" /> : <FontAwesomeIcon size="xl" className="hover:text-[#CB450C]" icon={faBars} />}
+          {isNavOpen ? <FontAwesomeIcon icon={faXmark} size="xl" className="hover:text-[#CB450C]" /> : <FontAwesomeIcon size="xl" className="hover:text-[#CB450C]" icon={faBars} />}
         </Button>
       </div>
     </nav>
