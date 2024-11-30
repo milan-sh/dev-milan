@@ -1,14 +1,16 @@
 import React from "react";
 import skills from "./skillCollection";
 import Marquee from "react-fast-marquee";
+import {useScrollAnimations} from "../custom_hooks/useScrollAnimations"
 
 function Skills() {
+  useScrollAnimations();
   return (
     <div className="w-full">
-      <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
+      <h1 className="animate-on-scroll text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Skills
       </h1>
-      <div className="flex text-center justify-evenly p-2 gap-x-8 overflow-x-hidden">
+      <div className="animate-on-scroll flex text-center justify-evenly p-2 gap-x-8 overflow-x-hidden">
         <Marquee pauseOnHover speed={100}>
           {skills.map((skill) => (
             <div

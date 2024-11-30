@@ -1,21 +1,22 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-
+import {useScrollAnimations} from "../custom_hooks/useScrollAnimations"
 
 function Work() {
+  useScrollAnimations();
   return (
     <div id="projects" className="w-full">
-      <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
+      <h1 className="animate-on-scroll text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Projects
       </h1>
-      <p className="text-center text-hoverBg md:text-xl mx-auto w-3/4 md:w-2/4 mb-10">
+      <p className="animate-on-scroll text-center text-hoverBg md:text-xl mx-auto w-3/4 md:w-2/4 mb-10">
         A collection of my selected website, niche projects, and CSS
         experiments. which are both pretty and fun. Check these out.
       </p>
 
       {/* projects grid */}
       {/* 1345X645 image aspect ratio */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-[1px] bg-secondaryBg py-[1px]">
+      <div className="animate-on-scroll grid sm:grid-cols-2 md:grid-cols-3 gap-[1px] bg-secondaryBg py-[1px]">
         <ProjectCard
         img="blog.png"
         url="https://binary-blogs.vercel.app/"

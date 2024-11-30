@@ -5,6 +5,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {useScrollAnimations} from "../custom_hooks/useScrollAnimations"
 
 function Contact() {
   const form = useRef();
@@ -66,12 +67,14 @@ function Contact() {
       );
   };
 
+  useScrollAnimations();
+
   return (
     <div id="contact" className="bg-primaryBg md:pb-20 pb-10">
-      <h1 className="md:text-mdHeading text-phoneHeading font-bebas text-center text-primaryTextColor">
+      <h1 className="animate-on-scroll md:text-mdHeading text-phoneHeading font-bebas text-center text-primaryTextColor">
         Contact
       </h1>
-      <div className="text-secondaryTextColor m-auto md:w-2/4 w-[90%]">
+      <div className="animate-on-scroll text-secondaryTextColor m-auto md:w-2/4 w-[90%]">
         <form
           ref={form}
           onSubmit={handleSubmit}

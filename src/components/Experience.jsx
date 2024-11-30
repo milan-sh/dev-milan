@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import experience from "./experienceList";
 import Button from "./Button";
+import {useScrollAnimations} from "../custom_hooks/useScrollAnimations"
 
 function Experience() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,19 +17,21 @@ function Experience() {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  useScrollAnimations();
+
   return (
     <div id="experience" className="w-full py-10 mb-5">
-      <h1 className="text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
+      <h1 className="animate-on-scroll text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Experience
       </h1>
       {experience?.map((data, index) => (
         <div
           key={data.id}
-          className="md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center mb-5 text-gray-900"
+          className="animate-on-scroll md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center mb-5 text-gray-900"
         >
           <button
             className="bg-hoverBg flex md:flex-row flex-col justify-between px-4 py-3 font-semibold
-              md:text-lg w-full rounded-t-sm "
+              md:text-xl w-full rounded-t-sm "
             onClick={() => {
               toggleAccordion(index);
             }}
