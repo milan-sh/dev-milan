@@ -8,20 +8,30 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import ToggleContext from "./context/ToggleContext";
+import { ReactLenis, useLenis } from "lenis/react";
 
 function App() {
   const { isNavOpen } = useContext(ToggleContext);
+  const lenis = useLenis(({ scroll }) => {
+    // called every scroll
+  });
+
+  
   return (
-    <div className="min-h-screen bg-primaryBg">
-      {isNavOpen && <Menu />}
-      {isNavOpen? null : <Navbar/>}
-      <Hero />
-      <Skills />
-      <Work />
-      <Experience />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <ReactLenis root>
+        <div className="min-h-screen bg-primaryBg">
+          {isNavOpen && <Menu />}
+          {isNavOpen ? null : <Navbar />}
+          <Hero />
+          <Skills />
+          <Work />
+          <Experience />
+          <Contact />
+          <Footer />
+        </div>
+      </ReactLenis>
+    </>
   );
 }
 
