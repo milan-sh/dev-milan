@@ -31,7 +31,7 @@ function Menu() {
       <div className="text-primaryTextColor font-bebas text-phoneHeading md:text-smHeading md:leading-none p-5 text-right">
         <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("projects")}>Projects</h2>
         <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("experience")}>Experience</h2>
-        <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("servcies")}>Services</h2>
+        <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("achievements")}>Achievements</h2>
         <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("contact")}>Contact</h2>
       </div>
     </div>

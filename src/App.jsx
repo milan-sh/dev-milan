@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
+import Achievement from "./components/Achievement ";
 import ToggleContext from "./context/ToggleContext";
 import { ReactLenis, useLenis } from "lenis/react";
 
@@ -27,6 +28,7 @@ function App() {
           <Skills />
           <Work />
           <Experience />
+          <Achievement/>
           <Contact />
           <Footer />
         </div>

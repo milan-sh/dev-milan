@@ -21,7 +21,7 @@ export default {
       fontSize:{
         xlHeading: "292px",
         lgHeading: "233px",
-        mdHeading: "175px",
+        mdHeading: "168px",
         smHeading: "143px",
         mobileHeading: "140px",
         phoneHeading: "80px"
