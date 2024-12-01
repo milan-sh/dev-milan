@@ -16,7 +16,8 @@ export default {
       },
       fontFamily:{
         bebas: "Bebas Neue, sans-serif",
-        robot: "Roboto, sans-serif"
+        robot: "Roboto, sans-serif",
+        poppings: "Poppins, sans-serif"
       },
       fontSize:{
         xlHeading: "292px",

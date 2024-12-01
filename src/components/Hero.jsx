@@ -59,7 +59,7 @@ function Hero() {
             </span>
           ))}
         </h1>
-        <div className="about font-robot text-secondaryTextColor md:p-4 md:w-2/4 sm:w-3/4 ">
+        <div className="about font-poppings font-normal leading-tight tracking-tight text-secondaryTextColor md:p-4 md:w-2/4 sm:w-3/4 ">
           <div>
             <p className="leading-tight">
               <span className="text-primaryTextColor mr-2">ABOUT</span>I am a developer based in New Delhi, India, specializing in creating dynamic, responsive, and visually appealing websites. With expertise in <span className="text-hoverBg">React</span>, <span className="text-hoverBg">JavaScript</span>, and <span className="text-hoverBg">TypeScript</span> , I focus on delivering seamless functionality and engaging user experiences.
