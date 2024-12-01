@@ -24,7 +24,7 @@ export default {
         mdHeading: "168px",
         smHeading: "143px",
         mobileHeading: "140px",
-        phoneHeading: "80px"
+        phoneHeading: "70px"
       },
       boxShadow:{
         'custom-orange': '0px 12px 32px rgba(203, 69, 0, 0.3)',

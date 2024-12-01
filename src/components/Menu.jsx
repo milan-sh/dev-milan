@@ -28,7 +28,7 @@ function Menu() {
   return (
     <div className="min-h-screen bg-primaryBg">
       <Navbar />
-      <div className="text-primaryTextColor font-bebas text-phoneHeading md:text-smHeading md:leading-none p-5 text-right">
+      <div className="text-primaryTextColor font-bebas text-phoneHeading md:text-smHeading md:leading-none md:p-5 pr-2 text-right">
         <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("projects")}>Projects</h2>
         <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("experience")}>Experience</h2>
         <h2 className="menu-items md:mr-20 hover:text-hoverBg cursor-pointer" onClick={()=>scrollToSection("achievements")}>Achievements</h2>

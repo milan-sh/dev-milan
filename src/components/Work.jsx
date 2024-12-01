@@ -10,8 +10,7 @@ function Work() {
         Projects
       </h1>
       <p className="animate-on-scroll text-center text-hoverBg md:text-xl mx-auto w-3/4 md:w-2/4 mb-10">
-        A collection of my selected website, niche projects, and CSS
-        experiments. which are both pretty and fun. Check these out.
+      A showcase of my curated websites, niche projects, and CSS experiments, designed to be both visually appealing and engaging. Explore and discover my work!
       </p>
 
       {/* projects grid */}
@@ -20,34 +19,38 @@ function Work() {
         <ProjectCard
         img="blog.png"
         url="https://binary-blogs.vercel.app/"
-        title="Binary Blog"
+        title="Binary Blogs"
         skill1="React"
         skill2="Appwrite"
-        about="A blog website where you can write your thoughts."
+        about="A dynamic blogging platform where users can create, edit, and explore articles on various topics. Built using React, Appwrite, and Tailwind CSS, it emphasizes performance and responsive design."
+        repo="https://github.com/milan-sh/binary-blogs.git"
         />
         <ProjectCard
         img="weather.png"
         url="https://milan-sh.github.io/weather-app/"
-        title="Weather App"
+        title="Weather Watcher"
         skill1="React"
         skill2="Redux.js"
-        about="Real-time weather updates for any location worldwide."
+        about="A sleek and responsive weather application providing real-time weather updates for locations worldwide. The app features a clean user interface and detailed weather data, including temperature, humidity, and wind speed."
+        repo="https://github.com/milan-sh/weather-app.git"
         />
         <ProjectCard
         img="todo.png"
         url="https://milan-sh.github.io/to-do-web-app/"
-        title="To Do App"
+        title="Task Tracker"
         skill1="JS"
         skill2="CSS"
-        about="To-Do Web App that helps you manage daily tasks."
+        about="A simple and intuitive to-do application designed to help users manage their daily tasks efficiently. With a focus on usability, it enables users to add, edit, delete, and mark tasks as complete."
+        repo="https://github.com/milan-sh/to-do-web-app.git"
         />
         <ProjectCard
         img="expense.png"
         url="https://milan-sh.github.io/expense-tracker-app/"
-        title="Expense Tracker"
+        title="Expense Ease"
         skill1="JS"
         skill2="Tailwind"
-        about="An Expense Tracker App that enables users to add expenses and earnings."
+        about="A user-friendly expense tracker designed to simplify financial management by tracking income and expenditures. The application provides clear insights into spending habits with interactive visuals and data summaries."
+        repo="https://github.com/milan-sh/expense-tracker-app.git"
         />
         <ProjectCard
         img="netflix.png"
@@ -55,7 +58,8 @@ function Work() {
         title="Netflix UI Clone"
         skill1="CSS"
         skill2="HTML"
-        about="A Netflix UI Clone that replicates the popular streaming platform's interface."
+        about="A pixel-perfect clone of Netflix's user interface, built to replicate its sleek and immersive design. This project showcases dynamic content, responsive layouts, and smooth animations for an authentic viewing experience."
+        repo="https://github.com/milan-sh/netflix-frontend-clone.git"
         />
         <div className="relative hidden bg-primaryBg border border-dashed border-borderColor  md:flex flex-col justify-center items-center gap-y-4">
           <img className="invert h-16 " src="./coming_soon.png" alt="" />

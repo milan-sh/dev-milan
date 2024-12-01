@@ -8,7 +8,7 @@ const experience  = [
         location:"New Delhi, India",
         companyName: "Sudoyantra India",
         webURL: "https://sudoyantra.com",
-        desc: "Contributing to a responsive, user-friendly website using TypeScript, Tailwind CSS, and HTML. Ensuring cross-browser compatibility and writing scalable, maintainable front-end code.",
+        desc: "Working as a Frontend Developer, contributing to the development of a responsive, user-friendly website using TypeScript, Tailwind CSS, and HTML. Focused on ensuring cross-browser compatibility and writing scalable, maintainable front-end code.",
         url: "/workedlogos/sudoyantralogo.png",
         tech: ["Typescript", "Javascrit", "Tailwind"]
     },
