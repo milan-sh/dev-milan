@@ -49,12 +49,12 @@ function Work() {
         {/* Task Tracer */}
         <ProjectCard
         img="todo.png"
-        url="https://milan-sh.github.io/to-do-web-app/"
+        url="https://todo-web-app-sandy.vercel.app/"
         title="Task Tracker"
-        skill1="JS"
-        skill2="CSS"
-        about="A simple and intuitive to-do application designed to help users manage their daily tasks efficiently. With a focus on usability, it enables users to add, edit, delete, and mark tasks as complete."
-        repo="https://github.com/milan-sh/to-do-web-app.git"
+        skill1="TS"
+        skill2="Tailwind"
+        about="A simple and intuitive TypeScript-powered to-do app designed for efficient task management. With strong type safety, it enables users to add, edit, delete, and mark tasks as complete—ensuring reliability and maintainability. "
+        repo="https://github.com/milan-sh/todo-web-app.git"
         />
         {/* Dice Game*/}
         <ProjectCard
