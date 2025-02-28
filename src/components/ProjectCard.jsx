@@ -8,7 +8,7 @@ function ProjectCard({ url, img, title, skill1, skill2, about, repo }) {
     <div className="flex flex-col bg-primaryBg">
       <a target="_blank" href={`${url}`}>
         <img
-          className="p-2 m-auto hover:scale-[0.96] hover:border-[1px] hover:border-secondaryBg duration-200 object-cover"
+          className="p-2 m-auto hover:scale-[0.96] hover:border-[1px] hover:border-secondaryBg duration-200 object-cover rounded-lg"
           src={`./projectImages/${img}`}
           width="1150"
           height="700"
@@ -17,7 +17,7 @@ function ProjectCard({ url, img, title, skill1, skill2, about, repo }) {
       </a>
 
       <div className="p-2">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center px-1">
           <h2 className="text-hoverBg font-semibold text-xl md:text-2xl">{title}</h2>
           <div className="flex justify-between items-center gap-x-1">
             <Button className="cursor-default">{skill1}</Button>
@@ -25,7 +25,7 @@ function ProjectCard({ url, img, title, skill1, skill2, about, repo }) {
             <Button className="border-hoverBg p-0 ml-2"><a href={`${repo}`} target="_blank"><FontAwesomeIcon color="#CB450C" icon={faCode} /></a></Button>
           </div>
         </div>
-        <p className="text-secondaryTextColor mt-2 leading-tight">{about}</p>
+        <p className="text-secondaryTextColor mt-2 leading-tight pb-4 px-1">{about}</p>
       </div>
     </div>
   );
