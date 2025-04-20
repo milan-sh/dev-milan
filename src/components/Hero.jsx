@@ -32,7 +32,7 @@ function Hero() {
       <div className="overflow-y-hidden pr-2">
         <div className="fe flex justify-between items-center flex-wrap font-bebas text-primaryTextColor xl:text-xlHeading lg:text-lgHeading md:text-mdHeading sm:text-smHeading text-mobileHeading xl:leading-[16rem] lg:leading-[14rem] md:leading-[12rem] sm:leading-[10rem] leading-[9rem]">
           <h1 className="tracking-tighter">
-            {Array.from("FRONT").map((letter, index) => (
+            {Array.from("MERN").map((letter, index) => (
               <span
                 key={index}
                 className="hover:text-secondaryTextColor inline-block"
@@ -43,7 +43,7 @@ function Hero() {
           </h1>
           <h1 className="tracking-tighter">——</h1>
           <h1 className="tracking-tighter">
-            {Array.from("END").map((letter, index) => (
+            {Array.from("STACK").map((letter, index) => (
               <span key={index} className="hover:text-secondaryTextColor">
                 {letter}
               </span>
@@ -62,7 +62,16 @@ function Hero() {
         <div className="about font-poppings font-normal leading-tight tracking-tight text-secondaryTextColor md:p-4 md:w-2/4 sm:w-3/4 ">
           <div>
             <p className="leading-tight">
-              <span className="text-primaryTextColor mr-2">ABOUT</span>I am a developer based in New Delhi, India, specializing in creating dynamic, responsive, and visually appealing websites. With expertise in <span className="text-hoverBg">React</span>, <span className="text-hoverBg">JavaScript</span>, and <span className="text-hoverBg">TypeScript</span> , I focus on delivering seamless functionality and engaging user experiences.
+              <span className="text-primaryTextColor mr-2">ABOUT</span>I build
+              high-performance fullstack web applications, crafting{" "}
+              <span className="text-hoverBg">scalable solutions</span> with
+              clean architecture. Passionate about delivering{" "}
+              <span className="text-hoverBg">intuitive interfaces </span>
+              and{" "}
+              <span className="text-hoverBg">
+                optimized backend systems
+              </span>{" "}
+              for seamless user experiences.
             </p>
           </div>
           <div className=" xl:flex sm:hidden hidden justify-between items-center mt-6 lg:hidden md:hidden">
