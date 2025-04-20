@@ -5,19 +5,20 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {useScrollAnimations} from "../custom_hooks/useScrollAnimations"
+import { useScrollAnimations } from "../custom_hooks/useScrollAnimations";
 
 function Contact() {
   const form = useRef();
-  const [name, setName] = useState()
-  const [email, setEmail] = useState()
-  const [message, setMessage] = useState()
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [sendingMail, setSendingMail] = useState(false);
 
-  const clearFields=()=>{
+  const clearFields = () => {
     setName("");
     setEmail("");
     setMessage("");
-  }
+  };
 
   const success = () => {
     toast.success("Successfully sent", {
@@ -45,26 +46,26 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    emailjs
-      .sendForm(
+    try {
+      setSendingMail(true);
+      const response = await emailjs.sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         form.current,
         import.meta.env.VITE_PUBLIC_ID
-      )
-      .then(
-        (resut) => {
-          // console.log("successfully sent email", resut.text);
-          success();
-          clearFields();
-        },
-        (error) => {
-          console.log("Failed", error);
-          failed();
-        }
       );
+      if (response) {
+        success();
+        clearFields();
+      }
+    } catch (error) {
+      console.error("Failed to sent email, try after some time", error);
+      failed();
+    } finally {
+      setSendingMail(false);
+    }
   };
 
   useScrollAnimations();
@@ -86,6 +87,7 @@ function Contact() {
             value={name}
             type="text"
             name="user_name"
+            onChange={(e)=>{setName(e.target.value)}}
             required
           />
           <input
@@ -94,6 +96,7 @@ function Contact() {
             value={email}
             type="email"
             name="user_email"
+            onChange={(e)=>{setEmail(e.target.value)}}
             required
           />
           <textarea
@@ -102,6 +105,7 @@ function Contact() {
             placeholder="Message"
             value={message}
             name="message"
+            onChange={(e)=>{setMessage(e.target.value)}}
             id=""
             required
           ></textarea>
@@ -109,8 +113,10 @@ function Contact() {
             className="px-20 py-1 m-auto text-xl flex justify-between gap-x-4"
             type="submit"
             value="Send"
+            disabled={sendingMail}
           >
-            Send <FontAwesomeIcon color="#CB450C" icon={faPaperPlane} />
+            {sendingMail ? "Sending..." : "Send"}{" "}
+            {sendingMail? "" : <FontAwesomeIcon color="#CB450C" icon={faPaperPlane} />}
           </Button>
         </form>
       </div>
