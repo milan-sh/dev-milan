@@ -46,8 +46,8 @@ const skills = [
     },
     {
         id: 10,
-        name: "C++",
-        url: "./skillImages/cpp.png"
+        name: "Postgres",
+        url: "./skillImages/postgres.png"
     },
     {
         id: 11,
@@ -98,6 +98,16 @@ const skills = [
         id: 20,
         name: "RPi",
         url: "./skillImages/raspberrypi.png"
+    },
+    {
+        id: 21,
+        name: "MongoDB",
+        url: "./skillImages/mongodb.webp"
+    },
+    {
+        id: 22,
+        name: "EJS",
+        url: "./skillImages/ejs.svg"
     }
 ];
 
