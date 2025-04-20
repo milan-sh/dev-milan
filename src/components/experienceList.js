@@ -4,11 +4,11 @@ const experience  = [
     {
         id:1,
         role: "Front-End Developer Intern",
-        duration: "Nov, 2024 — Present",
+        duration: "Nov, 2024 — Feb, 2025",
         location:"New Delhi, India",
         companyName: "Sudoyantra India",
         webURL: "https://sudoyantra.com",
-        desc: "Working as a Frontend Developer, contributing to the development of a responsive, user-friendly website using TypeScript, Tailwind CSS, and HTML. Focused on ensuring cross-browser compatibility and writing scalable, maintainable front-end code.",
+        desc: "I enhanced product web application using TypeScript, Tailwind CSS, and HTML. Improved user experience by 50% and reduced load times by 80% through performance optimizations and UI/UX refinements. Collaborated with cross-functional teams to maintain and scale the codebase while adhering to best practices.",
         url: "/workedlogos/sudoyantralogo.png",
         tech: ["Typescript", "Javascrit", "Tailwind"]
     },

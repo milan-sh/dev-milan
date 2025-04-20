@@ -10,7 +10,7 @@ function Work() {
         Projects
       </h1>
       <p className="animate-on-scroll text-center text-hoverBg md:text-xl mx-auto w-3/4 md:w-2/4 mb-10">
-      A showcase of my curated websites, niche projects, and CSS experiments, designed to be both visually appealing and engaging. Explore and discover my work!
+      Step into my digital playground—where websites come to life, experiments push boundaries, and CSS magic happens. Each project is crafted with care, blending clean design with smart functionality. Take a look around!
       </p>
 
       {/* projects grid */}
