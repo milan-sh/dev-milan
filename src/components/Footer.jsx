@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +11,17 @@ import {
 function Footer() {
   const date = new Date();
   const[showCopyButton, setShowCopyButton] = useState(false)
+  const[btnText, setBtnText] = useState("click to copy")
+
+  function copyEmail(){
+    //copying password to clipboard
+    window.navigator.clipboard.writeText("devmilansingh81@gmail.com")
+    setBtnText("copied")
+    setTimeout(() => {
+      setBtnText("click to copy")
+    }, 2000);
+  }
+
   return (
     <footer className="p-5">
       <div className="grid  lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 md:justify-between gap-y-3">
@@ -21,10 +32,14 @@ function Footer() {
           </p>
         </div>
         <div className="relative mx-auto md:order-2 order-2">
-          <p className="text-center text-secondaryTextColor font-semibold text-xl md:text-2xl cursor-pointer  hover:text-hoverBg" onMouseEnter={()=>setShowCopyButton(true)} >
+          <button className="text-center text-secondaryTextColor font-semibold text-xl md:text-2xl cursor-pointer  hover:text-hoverBg" 
+          onMouseEnter={()=>setShowCopyButton(true)} 
+          onMouseLeave={()=>setShowCopyButton(false)}
+          onClick={copyEmail}
+          >
             devmilansingh81@gmail.com
-          </p>
-          {showCopyButton ? <Button className="absolute -top-[100%] left-[50%] -translate-x-[50%] -translate-y-[50%]">click here to copy</Button> : ""}
+          </button>
+          {showCopyButton && <Button className="absolute -top-[100%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-4 py-1">{btnText}</Button>}
         </div>
         <div className="flex lg:justify-end justify-center items-center gap-x-2 md:order-3 order-1">
           <Button className="border-none">
