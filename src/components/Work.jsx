@@ -66,6 +66,16 @@ function Work() {
         about="Dice Guesser is a React-based game where you predict the next dice roll. Test your luck, enjoy dynamic dice animations, and get instant feedback on your guesses. A simple yet engaging game for quick fun!"
         repo="https://github.com/milan-sh/dice-game.git"
         />
+        {/* Memory Game*/}
+        <ProjectCard
+        img="memory.png"
+        url="https://memory-game-kappa-indol.vercel.app/"
+        title="Memory Game"
+        skill1="JS"
+        skill2="Tailwind"
+        about="A sleek and responsive memory matching game crafted with JavaScript and Tailwind CSS. The app features smooth animations and an intuitive UI, challenging players to find all matching pairs with minimal moves."
+        repo="https://github.com/milan-sh/memory-game.git"
+        />
         {/* GitHub Insight*/}
         <ProjectCard
         img="github.png"
@@ -76,25 +86,15 @@ function Work() {
         about="GitHub Insight is a web app that provides an overview of any GitHub profile. Enter a username to view details like profile link, repos, followers, and more, displayed in a sleek card design. Explore GitHub profiles effortlessly!"
         repo="https://github.com/milan-sh/github-insight.git"
         />
-        {/* Time lived*/}
+        {/* GitHub Insight*/}
         <ProjectCard
-        img="time.png"
-        url="https://time-lived.vercel.app/"
-        title="Time Lived"
-        skill1="JS"
-        skill2="CSS"
-        about="Discover how much of your life you've lived. This tool calculates the total time you've spent based on your age, breaking it down into years, months, days, hours, minutes, and seconds. A fun way to reflect on life!"
-        repo="https://github.com/milan-sh/time-lived.git"
-        />
-        {/* Netflix UI Clone */}
-        <ProjectCard
-        img="netflix.png"
-        url="https://milan-sh.github.io/netflix-frontend-clone/"
-        title="Netflix UI Clone"
-        skill1="CSS"
-        skill2="HTML"
-        about="A pixel-perfect clone of Netflix's user interface, built to replicate its sleek and immersive design. This project showcases dynamic content, responsive layouts, and smooth animations for an authentic viewing experience."
-        repo="https://github.com/milan-sh/netflix-frontend-clone.git"
+        img="password.png"
+        url="https://password-generator-eosin-theta.vercel.app/"
+        title="PassGen"
+        skill1="React"
+        skill2="Tailwind"
+        about="A dynamic password generator built with React and Tailwind CSS. Generate strong, customizable passwords by adjusting length and selecting from modular character sets, including letters, numbers, and special characters!"
+        repo="https://github.com/milan-sh/password-generator.git"
         />
         {/* coming soon card */}
         <div className="relative hidden bg-primaryBg border border-dashed border-borderColor  md:flex flex-col justify-center items-center gap-y-4">
