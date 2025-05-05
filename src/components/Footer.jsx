@@ -6,6 +6,7 @@ import {
   faGithub,
   faLinkedin,
   faDiscord,
+  faSquareXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
@@ -45,6 +46,11 @@ function Footer() {
           <Button className="border-none">
             <a href="https://github.com/milan-sh" target="_blank">
               <FontAwesomeIcon size="xl" icon={faGithub} />
+            </a>
+          </Button>
+          <Button className="border-none">
+            <a href="https://x.com/dev_81milan" target="_blank">
+              <FontAwesomeIcon size="xl" icon={faSquareXTwitter} />
             </a>
           </Button>
           <Button className="border-none">
