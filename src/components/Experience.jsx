@@ -30,7 +30,7 @@ function Experience() {
           className="animate-on-scroll md:max-w-[60%] w-[90%] m-auto flex flex-col justify-between items-center mb-5 text-gray-900"
         >
           <button
-            className="bg-hoverBg flex md:flex-row flex-col justify-between px-4 py-3 font-semibold
+            className="bg-hoverBg flex md:flex-row flex-col items-start md:items-center justify-center md:justify-between px-4 py-3 font-semibold
               md:text-xl w-full rounded-t-sm "
             onClick={() => {
               toggleAccordion(index);

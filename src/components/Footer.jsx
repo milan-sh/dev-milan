@@ -40,7 +40,7 @@ function Footer() {
           >
             devmilansingh81@gmail.com
           </button>
-          {showCopyButton && <Button className="absolute -top-[100%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-4 py-1">{btnText}</Button>}
+          {showCopyButton && <Button className="absolute w-full md:w-fit bg-hoverBg md:bg-transparent top-[60%] md:-top-[100%] left-[50%] -translate-x-[50%] -translate-y-[50%] px-4 py-1">{btnText}</Button>}
         </div>
         <div className="flex lg:justify-end justify-center items-center gap-x-2 md:order-3 order-1">
           <Button className="border-none">
