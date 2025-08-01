@@ -23,3 +23,11 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+/* global.css */
+.container {
+  width: 100%;
+  max-width: 1366px;    /* or 1200px, 1366px—pick what feels best for your design */
+  margin: 0 auto;       /* centers it horizontally */
+  padding: 0 1rem;      /* small side-padding so content never touches the viewport edge */
+}

@@ -19,7 +19,7 @@ function App() {
 
   
   return (
-    <>
+    <div className="container bg-primaryBg">
       <ReactLenis root>
         <div className="min-h-screen bg-primaryBg">
           {isNavOpen && <Menu />}
@@ -33,7 +33,7 @@ function App() {
           <Footer />
         </div>
       </ReactLenis>
-    </>
+    </div>
   );
 }
 

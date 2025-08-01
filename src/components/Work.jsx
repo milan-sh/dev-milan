@@ -37,7 +37,7 @@ function Work() {
         repo="https://github.com/milan-sh/binary-blogs.git"
         />
         {/* Expense Ease */}
-        <ProjectCard
+        {/* <ProjectCard
         img="expense.png"
         url="https://milan-sh.github.io/expense-tracker-app/"
         title="Expense Ease"
@@ -45,9 +45,9 @@ function Work() {
         skill2="Tailwind"
         about="A user-friendly expense tracker designed to simplify financial management by tracking income and expenditures. The application provides clear insights into spending habits with interactive visuals and data summaries."
         repo="https://github.com/milan-sh/expense-tracker-app.git"
-        />
+        /> */}
         {/* Task Tracer */}
-        <ProjectCard
+        {/* <ProjectCard
         img="todo.png"
         url="https://todo-web-app-sandy.vercel.app/"
         title="Task Tracker"
@@ -55,7 +55,7 @@ function Work() {
         skill2="Tailwind"
         about="A simple and intuitive TypeScript-powered to-do app designed for efficient task management. With strong type safety, it enables users to add, edit, delete, and mark tasks as complete—ensuring reliability and maintainability. "
         repo="https://github.com/milan-sh/todo-web-app.git"
-        />
+        /> */}
         {/* Dice Game*/}
         <ProjectCard
         img="dice.png"
@@ -77,7 +77,7 @@ function Work() {
         repo="https://github.com/milan-sh/memory-game.git"
         />
         {/* GitHub Insight*/}
-        <ProjectCard
+        {/* <ProjectCard
         img="github.png"
         url="https://github-insight-two.vercel.app/"
         title="GitHub Insight"
@@ -85,7 +85,7 @@ function Work() {
         skill2="CSS"
         about="GitHub Insight is a web app that provides an overview of any GitHub profile. Enter a username to view details like profile link, repos, followers, and more, displayed in a sleek card design. Explore GitHub profiles effortlessly!"
         repo="https://github.com/milan-sh/github-insight.git"
-        />
+        /> */}
         {/* GitHub Insight*/}
         <ProjectCard
         img="password.png"
