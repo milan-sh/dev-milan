@@ -29,7 +29,7 @@ function Navbar() {
       <div className="flex items-center justify-between gap-x-5">
         <Button
         className="hover:bg-hoverBg hover:text-black hover:border-hoverBg hidden md:block "
-        ><a href="https://drive.google.com/uc?export=download&id=1rHM5WRtpZ4DpZfFx1zj5pWEWiDF8bcRx">Download CV</a></Button>
+        ><a href="https://drive.google.com/uc?export=download&id=1SJfEuAxAIhdsYND7Z7LA1qJ_W2O-HQIk">Download CV</a></Button>
         <Button className="border-none" onClick={toggleNav}>
           {isNavOpen ? <FontAwesomeIcon icon={faXmark} size="xl" className="hover:text-[#CB450C]" /> : <FontAwesomeIcon size="xl" className="hover:text-[#CB450C]" icon={faBars} />}
         </Button>
