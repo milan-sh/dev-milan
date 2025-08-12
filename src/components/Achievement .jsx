@@ -11,7 +11,7 @@ function Achievement() {
       <div className="animate-on-scroll flex justify-center items-center md:px-14">
         <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col items-start justify-evenly gap-4">
           <img
-            className="rounded-lg object-cover lg:h-[50vh] md:h-[60vh] sm:h-[55vh] h-[32vh] m-auto sm:m-auto md:m-4"
+            className="rounded-lg object-cover 2xl:h-[30vh] md:h-[60vh] sm:h-[55vh] h-[32vh] m-auto sm:m-auto md:m-4"
             src="/achievement/sih.JPG"
             alt=""
           />
@@ -19,7 +19,7 @@ function Achievement() {
             <h3 className="text-secondaryTextColor md:text-3xl text-lg font-semibold mb-2">
               1<sup>st</sup> Runner Up - Smart India Hackathon 2022
             </h3>
-            <p className="leading-tight md:text-lg text-base">
+            <p className="leading-tight md:text-lg text-base 2xl:w-[30vw]">
               I was part of the team Sustainable Daily, which was recognized as
               the first runner-up in the Student Innovation category at Smart
               India Hackathon 2022. Our team developed a prototype to prevent
