@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Button({children, textColor = "text-secondaryTextColor", className="", ...props}) {
   return (

@@ -9,13 +9,10 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Achievement from "./components/Achievement ";
 import ToggleContext from "./context/ToggleContext";
-import { ReactLenis, useLenis } from "lenis/react";
+import { ReactLenis } from "lenis/react";
 
 function App() {
   const { isNavOpen } = useContext(ToggleContext);
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  });
 
   
   return (

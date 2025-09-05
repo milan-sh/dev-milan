@@ -56,7 +56,7 @@ function Menu() {
         </h2>
         <div className="menu-items flex justify-end">
           <Button className="bg-primaryBg text-primaryTextColor font-normal px-6 py-1 mt-6 font-sans border-hoverBg hover:border-hoverBg md:hidden block ">
-            <a href="https://drive.google.com/uc?export=download&id=1SJfEuAxAIhdsYND7Z7LA1qJ_W2O-HQIk">
+            <a href="https://drive.google.com/uc?export=download&id=11_Q4zYqxK3fva_YtdWuhzHSNJqG2gSXy">
               Download CV
             </a>
           </Button>
