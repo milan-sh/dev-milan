@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
 import {useScrollAnimations} from "../custom_hooks/useScrollAnimations"
 
@@ -9,22 +8,22 @@ function Work() {
       <h1 className="animate-on-scroll text-center text-primaryTextColor font-bebas md:text-mdHeading text-phoneHeading">
         Projects
       </h1>
-      <p className="animate-on-scroll text-center text-hoverBg md:text-xl mx-auto w-3/4 md:w-2/4 mb-10">
-      Step into my digital playground—where websites come to life, experiments push boundaries, and CSS magic happens. Each project is crafted with care, blending clean design with smart functionality. Take a look around!
+      <p className="animate-on-scroll text-center text-hoverBg md:text-xl mx-auto w-[85%] md:w-2/4 mb-10">
+      Step into my digital playground—where ideas turn into full-stack experiences and code flows from database to design. Each project blends clean architecture with smart functionality.
       </p>
 
       {/* projects grid */}
       {/* 1345X645 image aspect ratio */}
       <div className="animate-on-scroll grid sm:grid-cols-2 md:grid-cols-3 gap-[1px] bg-secondaryBg py-[1px]">
-        {/* Weather Watcher */}
+        {/* BingeBee */}
         <ProjectCard
-        img="weather.png"
-        url="https://milan-sh.github.io/weather-app/"
-        title="Weather Watcher"
-        skill1="React"
-        skill2="Redux.js"
-        about="A sleek and responsive weather application providing real-time weather updates for locations worldwide. The app features a clean user interface and detailed weather data, including temperature, humidity, and wind speed."
-        repo="https://github.com/milan-sh/weather-app.git"
+        img="bingebee.png"
+        url="https://bingebee.vercel.app/"
+        title="BingeBee"
+        skill1="Node.js"
+        skill2="React"
+        about="A video streaming platform where users can upload, watch, and engage through likes, comments, playlists, and subscriptions. Designed to provide an interactive and community-focused viewing experience."
+        repo="https://github.com/milan-sh/bingebee/tree/main"
         />
         {/* Binary Bolgs */}
         <ProjectCard
@@ -56,6 +55,16 @@ function Work() {
         about="A simple and intuitive TypeScript-powered to-do app designed for efficient task management. With strong type safety, it enables users to add, edit, delete, and mark tasks as complete—ensuring reliability and maintainability. "
         repo="https://github.com/milan-sh/todo-web-app.git"
         /> */}
+        {/* Weather Watcher */}
+        <ProjectCard
+        img="weather.png"
+        url="https://milan-sh.github.io/weather-app/"
+        title="Weather Watcher"
+        skill1="React"
+        skill2="Redux.js"
+        about="A sleek and responsive weather application providing real-time weather updates for locations worldwide. The app features a clean user interface and detailed weather data, including temperature, humidity, and wind speed."
+        repo="https://github.com/milan-sh/weather-app.git"
+        />
         {/* Dice Game*/}
         <ProjectCard
         img="dice.png"
@@ -67,7 +76,7 @@ function Work() {
         repo="https://github.com/milan-sh/dice-game.git"
         />
         {/* Memory Game*/}
-        <ProjectCard
+        {/* <ProjectCard
         img="memory.png"
         url="https://memory-game-kappa-indol.vercel.app/"
         title="Memory Game"
@@ -75,7 +84,7 @@ function Work() {
         skill2="Tailwind"
         about="A sleek and responsive memory matching game crafted with JavaScript and Tailwind CSS. The app features smooth animations and an intuitive UI, challenging players to find all matching pairs with minimal moves."
         repo="https://github.com/milan-sh/memory-game.git"
-        />
+        /> */}
         {/* GitHub Insight*/}
         {/* <ProjectCard
         img="github.png"
